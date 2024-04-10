@@ -1,5 +1,5 @@
-
-vendor/
 /nbproject/
 /nbproject/private/
 ignore/
+vendor/
+_dev/
