@@ -1,0 +1,14 @@
+RewriteEngine on
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+Options -Indexes
+
+ErrorDocument 401 "<h1>Ops, :( </h1>Acesso Negado!"
+ErrorDocument 403 "<h1>Ops, :( </h1> Estamos em manutencao!"
+ErrorDocument 404 "<h1>Ops, :( </h1>Pagina nao encontrada!"

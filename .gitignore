@@ -1,0 +1,5 @@
+
+vendor/
+/nbproject/
+/nbproject/private/
+ignore/

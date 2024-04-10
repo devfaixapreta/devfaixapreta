@@ -1,0 +1,6 @@
+_dev/
+vendor/
+node_modules/
+/nbproject/
+/nbproject/private/
+ignore/
